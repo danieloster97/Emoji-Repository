@@ -5,10 +5,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Emoji List</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 	<link href="landingpage.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
@@ -82,7 +80,7 @@
 			<td>A friendly, cartoon-styled face of a cow looking straight ahead. Variously depicted as a white, brown, or multicolored cow face with a neutral expression, short horns, and a pink or brown muzzle.</td>
 	  </tr>
 	  <tr>
-	    <td>Pizza</td>
+	    <td>Pizza<p style="display:none;">slice</p></td>
 	    <td>🍕</td>
 			<td>A slice of pepperoni pizza, topped with black olives on Google.</td>
 	  </tr>
@@ -97,7 +95,7 @@
 			<td>The snout of a pig. Depicted as a pink oval or slightly pear-shaped nose with two black nostrils.</td>
 	  </tr>
 	  <tr>
-	    <td>Face With Tears of Joy<p style="display:none;">test tag hopefully kim can't read this laugh</p></td>
+	    <td>Face With Tears of Joy<p style="display:none;">laugh</p></td>
 	    <td>😂</td>
 			<td>A yellow face with a big grin, uplifted eyebrows, and smiling eyes, each shedding a tear from laughing so hard. Widely used to show something is funny or pleasing. </td>
 	  </tr>
@@ -107,7 +105,7 @@
 			<td>A pensive, remorseful face. Saddened by life. Quietly considering where things all went wrong. Depicted as a yellow face with sad, closed eyes, furrowed eyebrows, and a slight, flat mouth.</td>
 	  </tr>
 		<tr>
-		 <td>Thinking Face</td>
+		 <td>Thinking Face<p style="display:none;">hmm</p></td>
 		 <td>🤔</td>
 		 <td>A yellow face with furrowed eyebrows looking upwards with thumb and index finger resting on its chin. Intended to show a person pondering or deep in thought.</td>
 	 </tr>
@@ -120,6 +118,30 @@
 		 <td>Bread</td>
 		 <td>🍞</td>
 		 <td>A loaf of white or wheat bread, as before it is sliced for toast or sandwiches.</td>
+	 </tr>
+	 <tr>
+		 <td>Water Buffalo</td>
+		 <td>🐃</td>
+		 <td>Depicted in gray or black in full profile on all fours facing left, with a tail and broad horns curled up at the tips.</td>
+	 </tr>
+	 <tr>
+		 <td>Face with Hand Over Mouth</td>
+		 <td>🤭</td>
+		 <td>A yellow face with a hand covering its mouth. Apple and Facebook feature simple, open eyes, suggesting someone gasping Oh my! in serious surprise, shock, concern, or apology. </td>
+	 </tr>
+	 <tr>
+		 <td>Hamburger</td>
+		 <td><button onclick="myFunction1()">Copy emoji</button><input type="text" value="🍔" id="myInput"></td>
+		 <td></td>
+		 <script>
+		 function myFunction1() {
+	   var copyText = document.getElementById("myInput");
+	   copyText.select();
+	   copyText.setSelectionRange(0, 99999)
+	   document.execCommand("copy");
+	   alert("Copied the text: " + copyText.value);
+	 }
+		 </script>
 	 </tr>
 	 <tr>
 		 <td></td>
@@ -147,6 +169,7 @@
 	    }
 	  }
 	}
+
 	</script>
 
 
